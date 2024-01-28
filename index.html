@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,700&display=swap" rel="stylesheet">
+    <!-- swiper link -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+</head>
+<body>
+
+    <!-- header section start -->
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    
+    <a href="#" class="logo"><span>p</span>apry<span><i class="fas fa-plane-departure"></i></span></a>
+
+
+    <nav class="navbar">
+       <a href="#home">home</a>
+       <a href="#book">book</a>
+       <a href="#packages">packages</a>
+       <a href="#team">team</a>
+       <a href="#gallery">gallery</a>
+       <a href="#review">review</a>
+       <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here....">
+        <label for="search-bar" class="fas fa-search" ></label>
+    </form>
+
+ 
+</header>
+
+    <!-- header section end -->
+
+    <!-- login form container start-->
+
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have any account? <a href="#">register now</a></p>
+        </form>
+    </div>
+    
+   <!-- login form container end-->
+
+
+   <!-- home section start -->
+
+
+   <section class="home" id="home">
+       <div class="content">
+           <h3>adventure is worthwhile</h3>
+           <p>dicover new places with us, adventure awaits</p>
+           <a href="#" class="btn">discover more</a>
+       </div>
+       
+
+       <div class="controls">
+           <span class="vid-btn active" data-src="images/video4.mp4"></span>
+           <span class="vid-btn" data-src="images/video7.mp4" ></span>
+           <span class="vid-btn" data-src="images/video4.mp4"></span>
+           <span class="vid-btn" data-src="images/video7.mp4"></span>
+           <span class="vid-btn" data-src="images/video3.mp4"></span>
+       </div>
+
+       <div class="video-container">
+           <video src="images/video2.mp4" id="video-slider" loop autoplay muted></video>
+       </div>
+   </section>
+
+   <!-- home section end -->
+
+   <!-- book start -->
+
+   <section class="book" id="book">
+        <h1 class="heading2">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/maldives3.jpeg" alt="">
+            </div>
+            <form action="">
+                <div class="inputbox">
+                    <h3>    Where to</h3>
+                    <input type="text" placeholder="Place name">
+                </div>
+                <div class="inputbox">
+                    <h3>How many</h3>
+                    <input type="number" placeholder="Number of guests">
+                </div>
+                <div class="inputbox">
+                    <h3>Arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputbox">
+                    <h3>Leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+   </section>
+
+   
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+  <h1 class="heading2">
+    <span>p</span>
+    <span>a</span>
+    <span>c</span>
+    <span>k</span>
+    <span>a</span>
+    <span>g</span>
+    <span>e</span>
+    <span>s</span>
+</h1>
+  
+  <ul class="controls">
+      <li class="buttons button-active" data-filter="all">all</li>
+      <li class="buttons" data-filter="switzerland">switzerland</li>
+      <li class="buttons" data-filter="maldives">maldives</li>
+      <li class="buttons" data-filter="indonesia">indonesia</li>
+      <li class="buttons" data-filter="dubai">dubai</li>
+  </ul>
+  
+  <div class="image-container">
+  
+      <div class="image switzerland">
+          <img src="images/switzerland1.jpeg" alt="">
+          <a href="#"><i class="fa-solid fa-location-dot"></i> switzerland</a>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price"> $90.00 <span>$120.00</span></div>
+          <a href="#" class="btn2">book now</a>
+          
+      </div>
+      <div class="image switzerland">
+          <img src="images/switzerland2.jpeg" alt="">
+          <a href="#"><i class="fa-solid fa-location-dot"></i> switzerland</a>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price"> $95.00 <span>$125.00</span></div>
+          <a href="#" class="btn2">book now</a>
+      </div>
+      <div class="image switzerland">
+          <img src="images/switzerland3.jpeg" alt="">
+          <a href="#"><i class="fa-solid fa-location-dot"></i> switzerland</a>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price"> $80.00 <span>$100.00</span></div>
+          <a href="#" class="btn2">book now</a>
+      </div>
+  
+      <div class="image maldives">
+          <img src="images/maldives1.jpeg" alt="">
+          <a href="#"><i class="fa-solid fa-location-dot"></i> maldives</a>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price"> $100.00 </div>
+          <a href="#" class="btn2">book now</a>
+      </div>
+      <div class="image maldives">
+          <img src="images/maldives2.jpeg" alt="">
+          <a href="#"><i class="fa-solid fa-location-dot"></i> maldives</a>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price"> $85.00 <span>$110.00</span></div>
+          <a href="#" class="btn2">book now</a>
+      </div>
+      <div class="image maldives">
+          <img src="images/maldives3.jpeg" alt="">
+          <a href="#"><i class="fa-solid fa-location-dot"></i> maldives</a>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price"> $82.00 <span>$105.00</span></div>
+          <a href="#" class="btn2">book now</a>
+      </div>
+  
+      <div class="image indonesia">
+          <img src="images/indonesia1.jpeg" alt="">
+          <a href="#"><i class="fa-solid fa-location-dot"></i> indonesia</a>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price"> $75.00</div>
+          <a href="#" class="btn2">book now</a>
+      </div>
+      <div class="image indonesia">
+          <img src="images/indonesia2.jpeg" alt="">
+          <a href="#"><i class="fa-solid fa-location-dot"></i> indonesia</a>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price"> $98.00 <span>$120.00</span></div>
+          <a href="#" class="btn2">book now</a>
+      </div>
+  
+      <div class="image dubai">
+          <img src="images/dubai.jpeg" alt="">
+          <a href="#"><i class="fa-solid fa-location-dot"></i> dubai</a>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price"> $125.00 <span>$140.00</span></div>
+          <a href="#" class="btn2">book now</a>
+      </div>
+  
+  </div>
+  
+  </section>
+  
+<!-- packages section ends -->
+
+  
+<!-- team section starts  -->
+
+<section id="team" class="team">
+
+    
+  <h1 class="heading2">
+    <span>o</span>
+    <span>u</span>
+    <span>r</span>
+    <span class="space"></span>
+    <span>t</span>
+    <span>e</span>
+    <span>a</span>
+    <span>m</span>
+</h1>
+    
+    <div class="row">
+    
+    <div class="card">
+      <div class="image">
+        <img src="images/indonesia1.jpeg" alt="">
+      </div>
+      <div class="info">
+        <h3>sourav shuvo</h3>
+        <span>manager</span>
+        <div class="icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="image">
+        <img src="images/switzerland3.jpeg" alt="">
+      </div>
+      <div class="info">
+        <h3>jannatl ferdous papry</h3>
+        <span>CEO</span>
+        <div class="icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="image">
+        <img src="images/maldives3.jpeg" alt="">
+      </div>
+      <div class="info">
+        <h3>fedrik leo</h3>
+        <span>employee</span>
+        <div class="icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+    
+    
+<!-- team section ends -->
+
+<!-- gallery start -->
+<section id="gallery">
+<div class="container">
+  <h1 class="heading2">
+    <span>g</span>
+    <span>a</span>
+    <span>l</span>
+    <span>l</span>
+    <span>e</span>
+    <span>r</span>
+    <span>y</span>
+    
+</h1>
+  <div class="box">
+    
+    <div class="dream">
+      <!-- <img src="images/pexels-photo-2356045.jpeg"> -->
+       <img src="images/pexels-photo-2507007.jpeg">
+        <img src="images/pexels-photo-2549018.jpeg">
+         
+    </div>
+
+      <div class="dream">
+      <img src="images/indonesia1.jpeg">
+       <img src="images/indonesia2.jpeg">
+        
+         
+          
+    </div>
+
+      <div class="dream">
+      <img src="images/switzerland1.jpeg">
+      <img src="images/switzerland2.jpeg">
+      <img src="images/pexels-photo-2901215.jpeg">
+      
+    </div>
+
+
+
+
+  </div>
+ 
+</section>
+
+<!-- gallery end -->
+
+<!-- review section starts  -->
+
+<h1 class="heading2">
+  <span>r</span>
+  <span>e</span>
+  <span>v</span>
+  <span>i</span>
+  <span>e</span>
+  <span>w</span> 
+
+
+<section id="review">
+ 
+  <div class="box-container">
+  
+  <div class="box" data-aos="flip-left">
+    <img src="images/maldives3.jpeg" alt="">
+    <div class="info">
+      <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae minima pariatur consequatur odio veniam nam dolorum enim eum a?<i class="fas fa-quote-right"></i></p>
+      <h2>--papry</h2>
+    </div>
+  </div>
+  
+  <div class="box" data-aos="flip-right">
+    <img src="images/maldives2.jpeg" alt="">
+    <div class="info">
+      <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, alias.<i class="fas fa-quote-right"></i></p>
+      <h2>--papry</h2>
+    </div>
+  </div>
+  
+  <div class="box" data-aos="flip-left">
+    <img src="images/indonesia2.jpeg" alt="">
+    <div class="info">
+      <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae minima pariatur consequatur odio veniam nam dolorum enim eum a?<i class="fas fa-quote-right"></i></p>
+      <h2>--papry</h2>
+    </div>
+  </div>
+  
+  <div class="box" data-aos="flip-right">
+    <img src="images/indonesia1.jpeg" alt="">
+    <div class="info">
+      <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae minima pariatur consequatur odio veniam nam dolorum enim eum a?<i class="fas fa-quote-right"></i></p>
+      <h2>--papry</h2>
+    </div>
+  </div>
+  
+  </div>
+  
+  </section>
+  
+  <!-- review section ends -->
+
+  <!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+  <h1 class="heading">
+      <span>c</span>
+      <span>o</span>
+      <span>n</span>
+      <span>t</span>
+      <span>a</span>
+      <span>c</span>
+      <span>t</span>
+  </h1>
+
+  <div class="row">
+
+      <div class="image">
+          <img src="images/pexels-photo-2662116.jpeg" alt="">
+      </div>
+
+      <form action="">
+          <div class="inputBox">
+              <input type="text" placeholder="name">
+              <input type="email" placeholder="email">
+          </div>
+          <div class="inputBox">
+              <input type="number" placeholder="number">
+              <input type="text" placeholder="subject">
+          </div>
+          <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+          <input type="submit" class="btn" value="send message">
+      </form>
+
+  </div>
+</section>
+
+
+
+<!---- brand section  -->
+<section class="brand-container">
+
+  <div class="swiper-container brand-slider">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+      </div>
+  </div> 
+
+</section> 
+
+
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>about us</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+      </div>
+      <div class="box">
+          <h3>branch locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">japan</a>
+          <a href="#">france</a>
+      </div>
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#">home</a>
+          <a href="#">book</a>
+          <a href="#">packages</a>
+          <a href="#">services</a>
+          <a href="#">gallery</a>
+          <a href="#">review</a>
+          <a href="#">contact</a>
+      </div>
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+      </div>
+
+  </div>
+
+</section>
+
+
+<!-- swiper link -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <!-- JS LINK -->
+    <script src="index.js"></script>
+
+</body>
+</html>
